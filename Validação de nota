@@ -1,0 +1,51 @@
+using System; 
+
+
+
+class minhaClasse {
+
+
+
+    static void Main(string[] args) { 
+
+            //implente sua solução aqui
+
+
+
+            var cont = 0;
+
+            double soma =0;
+
+            double media = 0;
+
+
+
+            do{
+
+                double nota = double.Parse(Console.ReadLine());
+
+                if (nota > 10 || nota < 0)
+
+                    Console.WriteLine("nota invalida");
+
+                else{
+
+                    cont = cont + 1; 
+
+                    soma = soma + nota;
+
+                    media = soma / 2;
+
+                }
+
+
+
+            }while(cont != 2 );
+
+
+
+            Console.WriteLine($"media = {media}");
+
+    }
+
+}
