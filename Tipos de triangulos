@@ -1,0 +1,32 @@
+using System; 
+
+class Desafio {
+
+        public static void Main()
+        {
+            string[] s = Console.ReadLine().Split(' ');
+            double a = double.Parse(s[0]);
+            double b = double.Parse(s[1]);
+            double c = double.Parse(s[2]);
+            double maior;
+
+              //continue a solucao
+        if(a < b) { maior = a; a = b; b = maior; }
+        if(a < c) { maior = a; a = c; c = maior; }
+        if(b < c) { maior = b; b = c; c = maior; }
+
+        if (a >= b + c)
+            Console.WriteLine("NAO FORMA TRIANGULO");
+        else if (a*a == b*b + c*c)
+            Console.WriteLine("TRIANGULO RETANGULO");
+        else if (a*a > b*b + c*c)
+            Console.WriteLine("TRIANGULO OBTUSANGULO");
+        else if (a*a < b*b + c*c)
+            Console.WriteLine("TRIANGULO ACUTANGULO");
+        if (a*a == b*b && a*a == c*c && b*b == c*c)
+            Console.WriteLine("TRIANGULO EQUILATERO");
+        else if (a*a == b*b && a*a != c*c || b*b == c*c && b*b != a*a)
+            Console.WriteLine("TRIANGULO ISOSCELES");
+    }
+  
+}
