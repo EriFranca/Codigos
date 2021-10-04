@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner leia = new Scanner(System.in);
+	   final double raizde3 = 1.73;
+	   double aresta;
+	   System.out.println("Digite o valor da aresta do cubo: ");
+	   aresta = leia.nextDouble();
+	   
+	   double areaSuperficie = 6*Math.pow(aresta, 2);
+	   double volume = Math.pow(aresta, 3);
+	   double diagonalPrincipal = aresta*raizde3;
+	   
+	   System.out.println("O cupo de aresta "+aresta+" Tem área da superficie igual à "+areaSuperficie+
+	   ", Volume igual "+volume+" e diagonal principal "+diagonalPrincipal);
+	   
+	}
+}
