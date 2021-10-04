@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		Scanner leiaString = new Scanner(System.in);
+		
+		System.out.println("Digite sua idade: ");
+		int idade = leia.nextInt();
+		System.out.println("é maior de idade? ");
+		System.out.println(idade >= 18);
+		
+		System.out.println("Informe seu salário: ");
+		double salario = leia.nextDouble();
+		System.out.println("Reccebe mais que o salário minimo? ");
+		System.out.println(salario >= 1100);
+		
+		System.out.println("Informe a sua altura: ");
+		double altura = leia.nextDouble();
+		System.out.println("é mais alto que 1,80 m: ");
+		System.out.println(altura > 1.8);
+		
+		System.out.println("Informe o seu peso: ");
+		double peso = leia.nextDouble();
+		System.out.println("Seu peso é menor que 60kg? ");
+		System.out.println(peso <60);
+		
+		System.out.println("Informe o seu nome: ");
+		String nome = leiaString.nextLine();
+		System.out.println("O nome digitado é igual a Eri? ");
+		System.out.println(nome.equals("Eri"));
+		
+		
+	}
+}
