@@ -1,0 +1,23 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i = 1;
+		int j = 1;
+		
+		do{
+		    do{
+		        if((i+j)%2 == 0){
+		            System.out.print("P ");
+		            j++;
+		        }else{
+		            System.out.print("B ");
+		            j++;
+		        }
+		    }while(j<=8);
+		    System.out.println();
+		    j=1;
+		    i++;
+		}while(i<=8);
+	}
+}
